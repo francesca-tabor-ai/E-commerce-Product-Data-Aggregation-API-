@@ -23,37 +23,6 @@ An Amazon scraper is included as a working template and can be extended to other
 
 ---
 
-## Project Structure
-
-.
-├── src/                          # Application source code
-│   ├── api/                      # API layer
-│   │   └── main.py               # FastAPI app with 8 REST endpoints
-│   │
-│   ├── models/                   # Data models
-│   │   └── product.py            # Product, price, and review schemas
-│   │
-│   ├── utils/                    # Shared utilities
-│   │   ├── data_manager.py       # JSON-based persistence layer
-│   │   └── sentiment_analyzer.py # Review sentiment analysis logic
-│   │
-│   ├── scrapers/                 # Web scrapers
-│   │   ├── amazon_scraper.py     # Amazon product scraping logic
-│   │   └── run_all.py            # Scraper orchestration entry point
-│
-├── .github/                      # GitHub configuration
-│   └── workflows/
-│       └── scrape.yml            # Scheduled scraping via GitHub Actions
-│
-├── requirements.txt              # Python dependencies
-├── .env.example                  # Environment variable template
-├── .gitignore                    # Git ignore rules
-├── README.md                     # Main project documentation
-└── QUICK_START.md                # 10-minute setup and deployment guide
-
-
----
-
 ## API Endpoints
 
 ### Product Discovery
