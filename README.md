@@ -26,30 +26,31 @@ An Amazon scraper is included as a working template and can be extended to other
 ## Project Structure
 
 .
-├── src/
-│ ├── api/
-│ │ └── main.py # FastAPI application (8 endpoints)
-│ ├── models/
-│ │ └── product.py # Product and review data models
-│ ├── utils/
-│ │ ├── data_manager.py # JSON-based data storage
-│ │ └── sentiment_analyzer.py # Review sentiment analysis
-│ ├── scrapers/
-│ │ ├── amazon_scraper.py # Amazon product scraper
-│ │ └── run_all.py # Scraper orchestrator
+├── src/                          # Application source code
+│   ├── api/                      # API layer
+│   │   └── main.py               # FastAPI app with 8 REST endpoints
+│   │
+│   ├── models/                   # Data models
+│   │   └── product.py            # Product, price, and review schemas
+│   │
+│   ├── utils/                    # Shared utilities
+│   │   ├── data_manager.py       # JSON-based persistence layer
+│   │   └── sentiment_analyzer.py # Review sentiment analysis logic
+│   │
+│   ├── scrapers/                 # Web scrapers
+│   │   ├── amazon_scraper.py     # Amazon product scraping logic
+│   │   └── run_all.py            # Scraper orchestration entry point
 │
-├── .github/
-│ └── workflows/
-│ └── scrape.yml # Automated daily scraping
+├── .github/                      # GitHub configuration
+│   └── workflows/
+│       └── scrape.yml            # Scheduled scraping via GitHub Actions
 │
-├── requirements.txt # Python dependencies
-├── .env.example # Environment variables template
-├── .gitignore # Git exclusions
-├── README.md # Project documentation
-└── QUICK_START.md # 10-minute setup guide
+├── requirements.txt              # Python dependencies
+├── .env.example                  # Environment variable template
+├── .gitignore                    # Git ignore rules
+├── README.md                     # Main project documentation
+└── QUICK_START.md                # 10-minute setup and deployment guide
 
-yaml
-Copy code
 
 ---
 
