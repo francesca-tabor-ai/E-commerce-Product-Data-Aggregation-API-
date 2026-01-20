@@ -1,0 +1,66 @@
+# Core API Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# Web Scraping
+beautifulsoup4==4.12.3
+requests==2.31.0
+lxml==5.1.0
+scrapy==2.11.0
+selenium==4.17.2
+playwright==1.41.0
+
+# E-commerce Specific
+price-parser==0.3.4
+html2text==2020.1.16
+
+# Data Processing
+pandas==2.2.0
+numpy==1.26.3
+
+# Database (JSON or PostgreSQL)
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.25
+
+# Utilities
+python-dotenv==1.0.0
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.6
+
+# Sentiment Analysis (for reviews)
+textblob==0.17.1
+vaderSentiment==3.3.2
+
+# Rate Limiting & Caching
+slowapi==0.1.9
+redis==5.0.1
+
+# Testing
+pytest==7.4.4
+pytest-asyncio==0.23.3
+httpx==0.26.0
+
+# Code Quality
+black==23.12.1
+flake8==7.0.0
+
+# Logging
+loguru==0.7.2
+
+# Date/Time
+python-dateutil==2.8.2
+pytz==2023.3
+
+# JSON Processing
+orjson==3.9.12
+
+# Job Scheduling
+apscheduler==3.10.4
+
+# Image Processing (for product images)
+Pillow==10.2.0
+
+# HTTP Client
+aiohttp==3.9.1
